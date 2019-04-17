@@ -1,0 +1,30 @@
+<template>
+    <c-lwc_streaming_api channel="/topic/NewContactCreated" api-version="45.0" debug=true
+        onmessage={handleMessage} onerror={handleError} class="lwc_streaming_api-1"></c-lwc_streaming_api>
+
+    <lightning-button label="Destroy Connection"  onclick={destroy}></lightning-button>
+
+    <lightning-button label="Restart Connection"  onclick={restart}></lightning-button>
+
+    <lightning-button label="Check Connection"  onclick={checkConnection}></lightning-button>
+
+    <div style="background: white;padding: 50px;">
+        <div style="margin:20px;">
+            Payload
+            <br/>
+            {payload}
+        </div>
+        
+        <div style="margin:20px;">
+            Error:
+            <br/>
+            {error}
+        </div>
+
+        <div style="margin:20px;">
+            Is Connection On:
+            <br/>
+            {isConnectionOn}
+        </div>
+    </div>
+</template>

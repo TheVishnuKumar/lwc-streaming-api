@@ -27,7 +27,8 @@ This component have three types of attributes.
 
 3. **debug**: This is optional attribute. It takes boolean value as the parameter. It allows you to see various logs on console. By default this is set to false if you omit this.
 
-####Events
+Events
+------
 This component have two types of events.
 1. **onmessage**: This event fire when any streaming api sends the payload/message. You need to define the handler for your component to get the value from this event.
 You can get payload from this: event.detail.payload
@@ -40,7 +41,6 @@ You can get error from this: event.detail.error
 
 Methods
 ----------
-
 This component have three types of methods that you can use to re-subscribe, unsubscrive and check the status of subscription.
 1. **subscribe()**: Subscribe the channel if it was destriyed or unsubscribe. You cannot Subscrive a chaneel if it already Subscrived. It prevent the multiple payload event from streaming api.
 

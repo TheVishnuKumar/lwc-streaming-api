@@ -5,14 +5,14 @@
 
 Features
 -------------
-- Subscribe Push Topics, Platform Events
+- Subscribe Push Topics, Platform Events.
 - Easy to use LWC APIs.
-- Easier control to subscribe, unsubscribe and check status of subscription.
+- Easier control to subscribe, unsubscribe and check the status of the subscription.
 
 
 Documentation
 -------------
-LWC Streaming API component let you to subscrive streaming api channel in the easy way. You just need to provide the channel name. It onmessage event let you to get the payload from streaming api.
+LWC Streaming API component let you subscribe streaming API channel in an easy way. You just need to provide the channel name. It message event let you get the payload from streaming API.
 
 	<c-lwc_streaming_api 
         channel="/topic/NewContactCreated" 
@@ -25,39 +25,39 @@ LWC Streaming API component let you to subscrive streaming api channel in the ea
 
 Attributes
 ----------
-This component have three types of attributes.
+This component has three types of attributes.
 1. **channel**: This is required attribute. Define the channel name. Ex:  /topic/NewContactCreated and event/My_Event__e.
 
-2. **api-version**: This is optional attribute. It defines that which api version will be used for cometd. If you omit this then it will take 45.0 as default version.
+2. **api-version**: This is an optional attribute. It defines that which API version will be used for cometd. If you omit this then it will take 45.0 as the default version.
 
-3. **debug**: This is optional attribute. It takes boolean value as the parameter. It allows you to see various logs on console. By default this is set to false if you omit this.
+3. **debug**: This is an optional attribute. It takes the boolean value as the parameter. It allows you to see various logs on console. By default, this is set to false if you omit this.
 
 Events
 ------
-This component have two types of events.
-1. **onmessage**: This event fire when any streaming api sends the payload/message. You need to define the handler for your component to get the value from this event.
+This component has two types of events.
+1. **onmessage**: This event fire when any streaming API sends the payload/message. You need to define the handler for your component to get the value from this event.
 You can get payload from this: event.detail.payload
 
-2. **onerror**: This event fire if any kind of error happens at the LWC streaming api component. You need to define the handler for your component to get the error message from this event.
-You can get error from this: event.detail.error
+2. **onerror**: This event fire if any kind of error happens at the LWC streaming API component. You need to define the handler for your component to get the error message from this event.
+You can get the error from this: event.detail.error
 
 **Note**: You can define debug=true to see all the console results as well.
 
 
 Methods
 ----------
-This component have three types of methods that you can use to re-subscribe, unsubscrive and check the status of subscription.
-1. **subscribe()**: Subscribe the channel if it was destriyed or unsubscribe. You cannot Subscrive a chaneel if it already Subscrived. It prevent the multiple payload event from streaming api.
+This component has three types of methods that you can use to re-subscribe, unsubscribe and check the status of the subscription.
+1. **subscribe()**: Subscribe the channel if it was destroyed or unsubscribe. You cannot Subscribe a channel if it already Subscribed. It prevents the multiple payload event from streaming API.
 
-2. **unsubscribe()**: Unsubscribe the channel. You can Subscrive a chaneel if it is unsubscribed. We can use this to stop receiving payloads.
+2. **unsubscribe()**: Unsubscribe the channel. You can Subscribe a channel if it is unsubscribed. We can use this to stop receiving payloads.
 
-3. **checkConnection()**: This methods returns true or false. If the channel is subscribed then it will return the true else false.
+3. **checkConnection()**: This method returns true or false. If the channel is subscribed then it will return the true else false.
 
 
 Example
 -------------
-**Step 1.** Create a push topic using Developer Console. Copy the following code and execute in the developer console.
-What will it do? It will create a push topic name NewContactCreated. Whenever a contact record get created. It will send the payload to the onmessage event.
+**Step 1.** Create a push topic using the Developer Console. Copy the following code and execute in the developer console.
+What will it do? It will create a push topic name NewContactCreated. Whenever a contact record gets created. It will send the payload to the onmessage event.
 ```
 PushTopic pushTopic = new PushTopic();
 pushTopic.Name = 'NewContactCreated';
@@ -71,9 +71,9 @@ pushTopic.NotifyForFields = 'All';
 insert pushTopic;
 ```
 
-**Step 2.** Create a Lightning Web Component name as : lwc_streaming_demo.
+**Step 2.** Create a Lightning Web Component name as lwc_streaming_demo.
 Copy and paste the following code to the files.
-**Note**: Add the target configuration in meta xml file. so you can add your demo component to the using app builder. In my case i have added the component to the home page.
+**Note**: Add the target configuration in the meta XML file. so you can add your demo component to the using the app builder. In my case, I have added the component to the home page.
 
 **lwc_streaming_demo.js**
 ```javascript
@@ -169,7 +169,7 @@ export default class Lwc_streaming_demo extends LightningElement {
 </LightningComponentBundle>
 ```
 
-**Step 3.** Open the your demo component. Now create some contact reccords and you will see the message/payload on the screen.
+**Step 3.** Open your demo component. Now create some contact records and you will see the message/payload on the screen.
 
 **Step 4 (Optional)**: If you want to try it with platform events. Create a platform event object. Subscribe it using below code.
 ```

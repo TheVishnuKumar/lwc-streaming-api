@@ -5,9 +5,6 @@
         "paths": {
             "c/lwc_streaming_api": [
                 "lwc_streaming_api/lwc_streaming_api.js"
-            ],
-            "c/cometd": [
-                "../staticresources/cometd/cometd.js"
             ]
         }
     },

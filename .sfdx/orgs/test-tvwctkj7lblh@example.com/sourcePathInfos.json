@@ -75,16 +75,15 @@
     [
         "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default/classes/LWC_StreamingApiController.cls",
         {
+            "state": "u",
             "sourcePath": "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default/classes/LWC_StreamingApiController.cls",
             "isDirectory": false,
-            "size": 149,
-            "modifiedTime": 1555498935549,
-            "changeTime": 1555498935549,
-            "contentHash": "9215af224b7364b365a8fc7ca5a877e64c1e327b",
             "isMetadataFile": false,
-            "state": "u",
+            "size": 148,
+            "modifiedTime": 1555500013352,
+            "changeTime": 1555500013352,
             "isWorkspace": false,
-            "isArtifactRoot": false
+            "contentHash": "b9c89d37dd626f4f4e074fa3a5292a9646f70b61"
         }
     ],
     [
@@ -135,15 +134,15 @@
     [
         "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default/lwc/lwc_streaming_api/lwc_streaming_api.js",
         {
-            "state": "u",
             "sourcePath": "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default/lwc/lwc_streaming_api/lwc_streaming_api.js",
             "isDirectory": false,
-            "isMetadataFile": false,
             "size": 3754,
             "modifiedTime": 1555499853155,
             "changeTime": 1555499853155,
-            "isWorkspace": false,
-            "contentHash": "ad0942862a325ad8171c69a324b002355e929b0c"
+            "contentHash": "ad0942862a325ad8171c69a324b002355e929b0c",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false
         }
     ],
     [

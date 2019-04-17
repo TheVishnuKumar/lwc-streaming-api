@@ -1,11 +1,21 @@
+/**
+ * @author Vishnu Kumar
+ * @email vishnukumarramawat@gmail.com
+ * @desc This JS Provide functionality to create streaming api connections.
+*/
 import { LightningElement,api } from 'lwc';
 import getSessionId from '@salesforce/apex/LWC_StreamingApiController.getSessionId';
 import { loadScript } from 'lightning/platformResourceLoader';
 import cometdStaticResource from '@salesforce/resourceUrl/cometd';
 
 export default class Lwc_streaming_api extends LightningElement {
+    //Channle Name
     @api channel;
+
+    //Override the version of api to use cometd. By default it will use 45.
     @api apiVersion = '45.0';
+
+    //If true then user can see console logs with data.
     @api debug = false;
 
     cometd;
@@ -15,19 +25,35 @@ export default class Lwc_streaming_api extends LightningElement {
         this.loadCometdScript();
     }
 
+    /**
+     * @author Vishnu Kumar
+     * @email vishnukumarramawat@gmail.com
+     * @desc Loads the cometd static resource.
+    */
     loadCometdScript(){
-        Promise.all([
-            loadScript(this, cometdStaticResource + '/cometd.js')
-        ])
-        .then(() => {
-            this.loadSessionId();
-        })
-        .catch(error => {
-            let message = error.message || error.body.message;
-            this.fireErrorEvent(message);
-        });
+        if( !this.subscription ){
+            Promise.all([
+                loadScript(this, cometdStaticResource + '/cometd.js')
+            ])
+            .then(() => {
+                this.loadSessionId();
+            })
+            .catch(error => {
+                let message = error.message || error.body.message;
+                this.fireErrorEvent(message);
+            });
+        }
+        else{
+            this.fireErrorEvent('Subscription already exists.');
+            this.consoleLog('(LWC Streaming API) Error: Subscription already exists.');
+        }
     }
 
+    /**
+     * @author Vishnu Kumar
+     * @email vishnukumarramawat@gmail.com
+     * @desc Loads the session id and create a connection with cometd.
+    */
     loadSessionId(){
         getSessionId()
         .then(sessionId => {
@@ -65,18 +91,28 @@ export default class Lwc_streaming_api extends LightningElement {
         })
         .catch(error => {
             let message = error.message || error.body.message;
-            this.fireErrorEvent(message);
+            this.fireErrorEvent('Error: '+ message);
         });
     }
 
+    /**
+     * @author Vishnu Kumar
+     * @email vishnukumarramawat@gmail.com
+     * @desc Fire the error event.
+    */
     fireErrorEvent(logMsg){
         this.dispatchEvent( 
             new CustomEvent('error', {
-                detail: {message: logMsg}
+                detail: {error: logMsg}
             })
         );
     }
 
+    /**
+     * @author Vishnu Kumar
+     * @email vishnukumarramawat@gmail.com
+     * @desc Fire the Payload/Message event.
+    */
     fireMessageEvent(payload){
         this.dispatchEvent( 
             new CustomEvent('message', {
@@ -85,8 +121,13 @@ export default class Lwc_streaming_api extends LightningElement {
         );
     }
 
+    /**
+     * @author Vishnu Kumar
+     * @email vishnukumarramawat@gmail.com
+     * @desc Destroy the connection with channel.
+    */
     @api
-    destroy(){
+    unsubscribe(){
         //Unsubscribing Cometd
 		this.cometd.unsubscribe( this.subscription, {}, (unsubResult) => {
             
@@ -106,9 +147,40 @@ export default class Lwc_streaming_api extends LightningElement {
             else{
                 this.consoleLog('(LWC Streaming API) unsubscription failed.');
             }
-		});
+        });
+        
+        this.subscription = undefined;
     }
 
+    /**
+     * @author Vishnu Kumar
+     * @email vishnukumarramawat@gmail.com
+     * @desc Reinitialize the connection with channel.
+    */
+    @api
+    subscribe(){
+        this.loadCometdScript();
+    }
+
+    /**
+     * @author Vishnu Kumar
+     * @email vishnukumarramawat@gmail.com
+     * @desc Return true is connection is not destroyed.
+    */
+    @api
+    checkConnection(){
+        if( this.subscription ){
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
+     * @author Vishnu Kumar
+     * @email vishnukumarramawat@gmail.com
+     * @desc Print console logs if debug is turned on.
+    */
     consoleLog(msg){
         if( this.debug ){
             console.log(msg);

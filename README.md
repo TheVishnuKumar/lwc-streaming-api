@@ -171,5 +171,26 @@ export default class Lwc_streaming_demo extends LightningElement {
 
 **Step 3.** Open the your demo component. Now create some contact reccords and you will see the message/payload on the screen.
 
+**Step 4 (Optional)**: If you want to try it with platform events. Create a platform event object. Subscribe it using below code.
+```
+<c-lwc_streaming_api 
+        channel="/event/Test_Event__e" 
+        api-version="45.0" 
+        debug=true
+        onmessage={handleMessage} 
+        onerror={handleError} 
+        class="lwc_streaming_api-1">
+    </c-lwc_streaming_api>
+```
+Here Test_Event__e is my platform event object name.
 
+Now create platform event records using below code:
+```
+Test_Event__e te = new Test_Event__e ();
+te.Test_Field__c  = 'test data';
+Database.SaveResult sr = EventBus.publish(te);
+```
+I have used a custom text field (Test_Field__c) in the platform event.
+
+Code on  <a href="https://gist.github.com/TheVishnuKumar/c692e4a2c908e95b990966f36804ca14">gist</a>
 

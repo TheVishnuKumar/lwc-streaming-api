@@ -9,10 +9,6 @@
     <members>lwc_streaming_api</members>
   </types>
   <types>
-    <name>Profile</name>
-    <members>Admin</members>
-  </types>
-  <types>
     <name>StaticResource</name>
     <members>cometd</members>
   </types>

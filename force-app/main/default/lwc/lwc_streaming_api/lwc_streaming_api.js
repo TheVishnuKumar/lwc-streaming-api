@@ -45,7 +45,7 @@ export default class Lwc_streaming_api extends LightningElement {
         }
         else{
             this.fireErrorEvent('Subscription already exists.');
-            this.consoleLog('(LWC Streaming API) Error: Connection already exists.');
+            this.consoleLog('(LWC Streaming API) Error: Subscription already exists.');
         }
     }
 

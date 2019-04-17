@@ -34,10 +34,10 @@
         {
             "sourcePath": "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default",
             "isDirectory": true,
-            "size": 256,
-            "modifiedTime": 1555505994593,
-            "changeTime": 1555505994593,
-            "contentHash": "4e3214baad7a4b4d20b843a689ee2c132b07f652",
+            "size": 288,
+            "modifiedTime": 1555524681557,
+            "changeTime": 1555524681557,
+            "contentHash": "184b33b7f7284328483df6a021aca0873a93c3b4",
             "isMetadataFile": false,
             "state": "u"
         }
@@ -106,10 +106,10 @@
         {
             "sourcePath": "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default/lwc",
             "isDirectory": true,
-            "size": 192,
-            "modifiedTime": 1555503296583,
-            "changeTime": 1555503296583,
-            "contentHash": "e8204362de2b6c88d06f8fa1331d548d6a810c8c",
+            "size": 160,
+            "modifiedTime": 1555524442524,
+            "changeTime": 1555524442524,
+            "contentHash": "47dd19cf821c8bef78c7d8fc739b01d48ed867a9",
             "isMetadataFile": false,
             "state": "u",
             "isWorkspace": false
@@ -133,15 +133,15 @@
     [
         "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default/lwc/lwc_streaming_api/lwc_streaming_api.js",
         {
-            "state": "u",
             "sourcePath": "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default/lwc/lwc_streaming_api/lwc_streaming_api.js",
             "isDirectory": false,
+            "size": 5680,
+            "modifiedTime": 1555523541078,
+            "changeTime": 1555523541078,
+            "contentHash": "10344bdf95f543c66738dc4c4756acae6abae2e0",
             "isMetadataFile": false,
-            "size": 5678,
-            "modifiedTime": 1555518221639,
-            "changeTime": 1555518221639,
-            "isWorkspace": false,
-            "contentHash": "b043085e8a92ff39c454f6f6a650ac4cbfeb4e98"
+            "state": "u",
+            "isWorkspace": false
         }
     ],
     [
@@ -165,7 +165,7 @@
             "sourcePath": "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api",
             "isDirectory": true,
             "size": 352,
-            "modifiedTime": 1555502381599,
+            "modifiedTime": 1555523716480,
             "changeTime": 1555502381599,
             "contentHash": "81fc3f0f422d52a96de4c3bd43291c5c1fe3d549",
             "isMetadataFile": false,
@@ -347,10 +347,10 @@
         {
             "sourcePath": "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default/profiles/Admin.profile-meta.xml",
             "isDirectory": false,
-            "size": 18716,
-            "modifiedTime": 1555499053009,
-            "changeTime": 1555499053009,
-            "contentHash": "5a08f6dc96e8df2de2f30bcd1a6bb7656fcc309f",
+            "size": 19220,
+            "modifiedTime": 1555524522991,
+            "changeTime": 1555524522991,
+            "contentHash": "64e197138f8378cd165abf8f03c07950c8ebd8aa",
             "isMetadataFile": true,
             "state": "u"
         }
@@ -399,63 +399,11 @@
         {
             "sourcePath": "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default/profiles",
             "isDirectory": true,
-            "size": 96,
-            "modifiedTime": 1555499053008,
-            "changeTime": 1555499053008,
-            "contentHash": "dd4bc5d00d5b87ac9dcfa94ec543d354d095c25c",
+            "size": 192,
+            "modifiedTime": 1555524522997,
+            "changeTime": 1555524522997,
+            "contentHash": "9c367b0e719eb8c48c5b0d9cbfb5f580a4bd6717",
             "isMetadataFile": false,
-            "state": "u"
-        }
-    ],
-    [
-        "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default/lwc/lwc_streaming_demo",
-        {
-            "sourcePath": "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default/lwc/lwc_streaming_demo",
-            "isDirectory": true,
-            "size": 160,
-            "modifiedTime": 1555503296585,
-            "changeTime": 1555503296585,
-            "contentHash": "a90dc47631e807eea32b2c3789b1cfbc4ea272ea",
-            "isMetadataFile": false,
-            "state": "u"
-        }
-    ],
-    [
-        "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default/lwc/lwc_streaming_demo/lwc_streaming_demo.html",
-        {
-            "sourcePath": "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default/lwc/lwc_streaming_demo/lwc_streaming_demo.html",
-            "isDirectory": false,
-            "size": 909,
-            "modifiedTime": 1555517610273,
-            "changeTime": 1555517610273,
-            "contentHash": "f244a60835ac36c18655684d0e443d377384e9b1",
-            "isMetadataFile": false,
-            "state": "u"
-        }
-    ],
-    [
-        "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default/lwc/lwc_streaming_demo/lwc_streaming_demo.js",
-        {
-            "state": "u",
-            "sourcePath": "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default/lwc/lwc_streaming_demo/lwc_streaming_demo.js",
-            "isDirectory": false,
-            "isMetadataFile": false,
-            "size": 764,
-            "modifiedTime": 1555518223591,
-            "changeTime": 1555518223591,
-            "contentHash": "78b834eeeb367bee56609e695391c90eeddd8e3a"
-        }
-    ],
-    [
-        "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default/lwc/lwc_streaming_demo/lwc_streaming_demo.js-meta.xml",
-        {
-            "sourcePath": "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default/lwc/lwc_streaming_demo/lwc_streaming_demo.js-meta.xml",
-            "isDirectory": false,
-            "size": 306,
-            "modifiedTime": 1555503426174,
-            "changeTime": 1555503426174,
-            "contentHash": "83c34dd61e5e5d6e989160dbc6e1d19b87a6f8e6",
-            "isMetadataFile": true,
             "state": "u"
         }
     ],
@@ -464,10 +412,10 @@
         {
             "sourcePath": "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default/flexipages/Home_Page_Default.flexipage-meta.xml",
             "isDirectory": false,
-            "size": 976,
-            "modifiedTime": 1555505994596,
-            "changeTime": 1555505994596,
-            "contentHash": "c92a147e54d0593f7f89cd1c49718ff10bce77ff",
+            "size": 855,
+            "modifiedTime": 1555524681559,
+            "changeTime": 1555524681559,
+            "contentHash": "742db5b880cdb5882a3c017735c25d847ee039c2",
             "isMetadataFile": true,
             "state": "u"
         }
@@ -478,9 +426,87 @@
             "sourcePath": "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default/flexipages",
             "isDirectory": true,
             "size": 96,
-            "modifiedTime": 1555505994596,
+            "modifiedTime": 1555524681559,
             "changeTime": 1555505994596,
             "contentHash": "8db0c01f640acc7ba1b555b8d1a44b12fe1de7dd",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default/profiles/Custom%3A Support Profile.profile-meta.xml",
+        {
+            "sourcePath": "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default/profiles/Custom%3A Support Profile.profile-meta.xml",
+            "isDirectory": false,
+            "size": 5080,
+            "modifiedTime": 1555524522976,
+            "changeTime": 1555524522976,
+            "contentHash": "0965a3ec261adb161d80e1cbd9d50466d893ab5c",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default/profiles/Custom%3A Sales Profile.profile-meta.xml",
+        {
+            "sourcePath": "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default/profiles/Custom%3A Sales Profile.profile-meta.xml",
+            "isDirectory": false,
+            "size": 4742,
+            "modifiedTime": 1555524522994,
+            "changeTime": 1555524522994,
+            "contentHash": "e7b75888f8fc0a674fb72b221f3ffdb796e7c56b",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default/profiles/Custom%3A Marketing Profile.profile-meta.xml",
+        {
+            "sourcePath": "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default/profiles/Custom%3A Marketing Profile.profile-meta.xml",
+            "isDirectory": false,
+            "size": 4742,
+            "modifiedTime": 1555524522997,
+            "changeTime": 1555524522997,
+            "contentHash": "e7b75888f8fc0a674fb72b221f3ffdb796e7c56b",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default/objects/Test_Event__e",
+        {
+            "sourcePath": "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default/objects/Test_Event__e",
+            "isDirectory": true,
+            "size": 128,
+            "modifiedTime": 1555524522970,
+            "changeTime": 1555524522970,
+            "contentHash": "2a9b6fdd9d1eec399fa1bf00ba8a2b82b2ee81bf",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default/objects",
+        {
+            "sourcePath": "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default/objects",
+            "isDirectory": true,
+            "size": 96,
+            "modifiedTime": 1555524522969,
+            "changeTime": 1555524522969,
+            "contentHash": "b7c72741790da289992e2a2da091c9e6886d6700",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default/objects/Test_Event__e/fields",
+        {
+            "sourcePath": "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default/objects/Test_Event__e/fields",
+            "isDirectory": true,
+            "size": 96,
+            "modifiedTime": 1555524522970,
+            "changeTime": 1555524522970,
+            "contentHash": "9d23cfd4c5a50f9a811be08600a65f91fd9474eb",
             "isMetadataFile": false,
             "state": "u"
         }

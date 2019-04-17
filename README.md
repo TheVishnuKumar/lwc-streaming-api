@@ -1,3 +1,8 @@
+<a href="https://githubsfdeploy.herokuapp.com?owner=TheVishnuKumar&repo=lwc-streaming-api">
+  <img alt="Deploy to Salesforce"
+       src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
+</a>
+
 Features
 -------------
 - Subscribe Push Topics, Platform Events

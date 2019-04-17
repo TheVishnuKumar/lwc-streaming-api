@@ -5,7 +5,7 @@
 - Easier control to subscribe, unsubscribe and check status of subscription.
 
 
-##Documentation
+Documentation
 -------------
 LWC Streaming API component let you to subscrive streaming api channel in the easy way. You just need to provide the channel name. It onmessage event let you to get the payload from streaming api.
 
@@ -18,7 +18,8 @@ LWC Streaming API component let you to subscrive streaming api channel in the ea
         class="lwc_streaming_api-1">
     </c-lwc_streaming_api>
 
-####Attributes
+Attributes
+----------
 This component have three types of attributes.
 1. **channel**: This is required attribute. Define the channel name. Ex:  /topic/NewContactCreated and event/My_Event__e.
 
@@ -36,7 +37,10 @@ You can get error from this: event.detail.error
 
 **Note**: You can define debug=true to see all the console results as well.
 
-####Methods
+
+Methods
+----------
+
 This component have three types of methods that you can use to re-subscribe, unsubscrive and check the status of subscription.
 1. **subscribe()**: Subscribe the channel if it was destriyed or unsubscribe. You cannot Subscrive a chaneel if it already Subscrived. It prevent the multiple payload event from streaming api.
 
@@ -44,7 +48,8 @@ This component have three types of methods that you can use to re-subscribe, uns
 
 3. **checkConnection()**: This methods returns true or false. If the channel is subscribed then it will return the true else false.
 
-##Example
+
+Example
 -------------
 **Step 1.** Create a push topic using Developer Console. Copy the following code and execute in the developer console.
 What will it do? It will create a push topic name NewContactCreated. Whenever a contact record get created. It will send the payload to the onmessage event.
@@ -65,7 +70,7 @@ insert pushTopic;
 Copy and paste the following code to the files.
 **Note**: Add the target configuration in meta xml file. so you can add your demo component to the using app builder. In my case i have added the component to the home page.
 
-####lwc_streaming_demo.js　
+**lwc_streaming_demo.js**
 ```javascript
 import { LightningElement,track } from 'lwc';
 
@@ -107,7 +112,7 @@ export default class Lwc_streaming_demo extends LightningElement {
 }
 ```
 
-####lwc_streaming_demo.html
+**lwc_streaming_demo.html**
 ```html
 <template>
     <c-lwc_streaming_api 
@@ -147,7 +152,7 @@ export default class Lwc_streaming_demo extends LightningElement {
 </template>
 ```
 
-####lwc_streaming_demo.js-meta.xml
+**lwc_streaming_demo.js-meta.xml**
 ```html
 <?xml version="1.0" encoding="UTF-8"?>
 <LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata" fqn="lwc_streaming_demo">

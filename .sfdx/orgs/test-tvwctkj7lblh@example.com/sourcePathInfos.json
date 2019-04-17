@@ -133,15 +133,15 @@
     [
         "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default/lwc/lwc_streaming_api/lwc_streaming_api.js",
         {
+            "state": "u",
             "sourcePath": "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default/lwc/lwc_streaming_api/lwc_streaming_api.js",
             "isDirectory": false,
-            "size": 5680,
-            "modifiedTime": 1555507112878,
-            "changeTime": 1555507112878,
-            "contentHash": "092eb0ca4d5bd986de507a9a92e4c48677dcbce2",
             "isMetadataFile": false,
-            "state": "u",
-            "isWorkspace": false
+            "size": 5678,
+            "modifiedTime": 1555518221639,
+            "changeTime": 1555518221639,
+            "isWorkspace": false,
+            "contentHash": "b043085e8a92ff39c454f6f6a650ac4cbfeb4e98"
         }
     ],
     [
@@ -423,27 +423,27 @@
     [
         "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default/lwc/lwc_streaming_demo/lwc_streaming_demo.html",
         {
-            "state": "u",
             "sourcePath": "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default/lwc/lwc_streaming_demo/lwc_streaming_demo.html",
             "isDirectory": false,
-            "isMetadataFile": false,
             "size": 909,
             "modifiedTime": 1555517610273,
             "changeTime": 1555517610273,
-            "contentHash": "f244a60835ac36c18655684d0e443d377384e9b1"
+            "contentHash": "f244a60835ac36c18655684d0e443d377384e9b1",
+            "isMetadataFile": false,
+            "state": "u"
         }
     ],
     [
         "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default/lwc/lwc_streaming_demo/lwc_streaming_demo.js",
         {
+            "state": "u",
             "sourcePath": "/Users/vishnukumar/Desktop/workspace/lwc-streaming-api/force-app/main/default/lwc/lwc_streaming_demo/lwc_streaming_demo.js",
             "isDirectory": false,
-            "size": 768,
-            "modifiedTime": 1555507340232,
-            "changeTime": 1555507340232,
-            "contentHash": "17de60d5eee9f3e2651cf486d7d610502c9d627a",
             "isMetadataFile": false,
-            "state": "u"
+            "size": 764,
+            "modifiedTime": 1555518223591,
+            "changeTime": 1555518223591,
+            "contentHash": "78b834eeeb367bee56609e695391c90eeddd8e3a"
         }
     ],
     [

@@ -44,7 +44,7 @@ export default class Lwc_streaming_api extends LightningElement {
             });
         }
         else{
-            this.fireErrorEvent('Connection already exists.');
+            this.fireErrorEvent('Subscription already exists.');
             this.consoleLog('(LWC Streaming API) Error: Connection already exists.');
         }
     }
@@ -127,7 +127,7 @@ export default class Lwc_streaming_api extends LightningElement {
      * @desc Destroy the connection with channel.
     */
     @api
-    destroy(){
+    unsubscribe(){
         //Unsubscribing Cometd
 		this.cometd.unsubscribe( this.subscription, {}, (unsubResult) => {
             
@@ -158,7 +158,7 @@ export default class Lwc_streaming_api extends LightningElement {
      * @desc Reinitialize the connection with channel.
     */
     @api
-    restartConnection(){
+    subscribe(){
         this.loadCometdScript();
     }
 

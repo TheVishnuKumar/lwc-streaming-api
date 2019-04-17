@@ -1,5 +1,5 @@
-###Features
-
+Features
+-------------
 - Subscribe Push Topics, Platform Events
 - Easy to use LWC APIs.
 - Easier control to subscribe, unsubscribe and check status of subscription.

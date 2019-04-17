@@ -3,6 +3,8 @@
        src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
 </a>
 
+**Demo:** https://www.youtube.com/watch?v=5yBWhLkybJ4
+
 Features
 -------------
 - Subscribe Push Topics, Platform Events.

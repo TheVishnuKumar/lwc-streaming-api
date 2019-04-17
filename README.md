@@ -1,2 +1,9 @@
-# lwc-streaming-api
-Lightning Web Component Streaming API
+# SFDX App
+
+## Dev, Build and Test
+
+## Resources
+
+## Description of Files and Directories
+
+## Issues

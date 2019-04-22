@@ -99,12 +99,12 @@ export default class Lwc_streaming_demo extends LightningElement {
         this.payload = this.payload + JSON.stringify(event.detail.payload);
     }
 
-    //This methos is subscribing the channel
+    //This method is subscribing the channel
     restart(){
         this.template.querySelector('.lwc_streaming_api-1').subscribe();
     }
 
-    //This methos is unsubscribing the channel
+    //This method is unsubscribing the channel
     destroy(){
         this.template.querySelector('.lwc_streaming_api-1').unsubscribe();
 
@@ -112,7 +112,7 @@ export default class Lwc_streaming_demo extends LightningElement {
         this.error = '';
     }
 
-    //This methos is checking if the channel is subscribed or not
+    //This method is checking if the channel is subscribed or not
     checkConnection(){
         this.isConnectionOn = this.template.querySelector('.lwc_streaming_api-1').checkConnection();
     }

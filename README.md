@@ -1,3 +1,6 @@
+**Update**: Salesforce has launched Emp API from Summer 19 release. You can use this one as well.
+<a href="https://developer.salesforce.com/docs/component-library/bundle/lightning-emp-api/documentation">lightning/empApi</a>
+
 <a href="https://githubsfdeploy.herokuapp.com?owner=TheVishnuKumar&repo=lwc-streaming-api">
   <img alt="Deploy to Salesforce"
        src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">

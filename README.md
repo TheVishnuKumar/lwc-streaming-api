@@ -1,4 +1,6 @@
 **Update**: Salesforce has launched Emp API from Summer 19 release. You can use this one as well.
+**NOTE** If you want to use streaming in Salesforce mobile app then EMP API still not available here. You can use lwc-streaming-api.
+
 <a href="https://developer.salesforce.com/docs/component-library/bundle/lightning-emp-api/documentation">lightning/empApi</a>
 
 <a href="https://githubsfdeploy.herokuapp.com?owner=TheVishnuKumar&repo=lwc-streaming-api">
